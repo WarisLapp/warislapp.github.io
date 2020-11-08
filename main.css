@@ -92,6 +92,12 @@ body {
   font-size: 20px;
 }
 
+#ex1 {
+  $("#fade").modal({
+ fadeDuration: 100
+});
+}
+
 /*grids*/
 
 .inner img {
