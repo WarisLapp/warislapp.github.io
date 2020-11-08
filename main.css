@@ -1,5 +1,9 @@
 /*2364AA 3DA5D9 73BFB8 FEC601 EA7317 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -90,12 +94,6 @@ body {
 
 .subtitle {
   font-size: 20px;
-}
-
-#ex1 {
-  $("#fade").modal({
- fadeDuration: 100
-});
 }
 
 /*grids*/
