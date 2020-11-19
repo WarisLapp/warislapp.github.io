@@ -36,28 +36,60 @@ body {
 }
 
 .fill video {
-  min-width: calc(100vw - 8vh);
-  min-height: 92vh;
+  min-width: 100vw;
+  min-height: 100vh;
   flex-shrink: 0;
 }
 
 /*divs*/
 
 .fsdiv {
-  height: 92vh;
-  width: calc(100vw - 8vh);
-  padding: 4vh;
+  height: 100vh;
+  width: 100vw;
+  padding: 0vh;
+  padding-bottom: 4vh;
+  animation-name: fsdiv1anim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 .fc1 {
-  width: calc(100vw - 8vh);
-  height: 92vh;
-  border-radius: 12px;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url(asset/wph.JPG);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+  animation-name: fc1anim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fsdiv1anim {
+  from {height: 100vh;
+        width: 100vw;
+        padding: 0vh;
+        padding-bottom: 4vh;}
+  to   {height: 92vh;
+        width: calc(100vw - 8vh);
+        padding: 4vh;}
+}
+
+@keyframes fc1anim {
+  from {width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);}
+  to   {width: calc(100vw - 8vh);
+        height: 92vh;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 }
 
 .c {
@@ -87,6 +119,17 @@ body {
   padding-bottom: 4vh;
 }
 
+.fc2 {
+  width: calc(100vw - 8vh);
+  height: 92vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(asset/wph.JPG);
+}
+
 .title {
   font-weight: 900;
   font-size: 50px;
@@ -94,6 +137,25 @@ body {
 
 .subtitle {
   font-size: 20px;
+}
+
+.iframewrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+
+.iframewrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.mdbg {
+  width: 100%;
 }
 
 /*grids*/
