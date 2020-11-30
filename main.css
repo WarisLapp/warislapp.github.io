@@ -47,7 +47,7 @@ body {
   height: 100vh;
   width: 100vw;
   padding: 0vh;
-  padding-bottom: 4vh;
+  padding-bottom: 2.5vh;
   animation-name: fsdiv1anim;
   animation-duration: 2s;
   animation-delay: 1.5s;
@@ -75,10 +75,11 @@ body {
   from {height: 100vh;
         width: 100vw;
         padding: 0vh;
-        padding-bottom: 4vh;}
+        padding-bottom: 2.5vh;}
   to   {height: 92vh;
         width: calc(100vw - 8vh);
-        padding: 4vh;}
+        padding: 4vh;
+      padding-bottom: 2.5vh;}
 }
 
 @keyframes fc1anim {
@@ -116,7 +117,7 @@ body {
   width: calc(100vw - 8vh);
   padding-left: 4vh;
   padding-right: 4vh;
-  padding-bottom: 4vh;
+  padding-bottom: 2.5vh;
 }
 
 .fc2 {
@@ -139,11 +140,46 @@ body {
   font-size: 20px;
 }
 
+/*modals*/
+
 .iframewrapper {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.iframewrappersquare {
+  position: relative;
+  width: 100%
+  height: 0;
+  padding-bottom: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.iframewrapperwide {
+  position: relative;
+  width: 100%
+  height: 0;
+  padding-bottom: 42.85714%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.iframewrapperwide iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.iframewrappersquare iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .iframewrapper iframe {
@@ -154,11 +190,45 @@ body {
   top: 0;
 }
 
-.mdbg {
+.mdtitle {
   width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 2.5%;
+}
+
+.mdtitle img {
+  width: 70%;
+  min-width: 300px;
+}
+
+.mdbody {
+  text-indent: 5%;
+}
+
+.whtxt {
+  color: white;
+}
+
+.mdfooter {
+  opacity: 65%;
+  padding: 5%;
+  padding-left: 3%;
+}
+
+.modal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*grids*/
+
+.griddiv {
+  padding: 2.5vh;
+  padding-top: 0;
+  width: calc(100vw - 5vh);
+}
 
 .inner img {
   display: block;
