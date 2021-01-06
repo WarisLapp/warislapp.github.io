@@ -87,6 +87,22 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+.fc13 {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(asset/04.JPG);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+  animation-name: fc1anim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes fsdiv1anim {
   from {height: 100vh;
         width: 100vw;
@@ -154,6 +170,28 @@ body {
 
 .subtitle {
   font-size: 20px;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  font-family: Muli;
+  padding: 5px 10px;
+  background: rgba(6, 13, 10, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+button:hover {
+  color: rgb(224, 216, 206);
+  background: rgba(6, 13, 10, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 6px;
 }
 
 /*modals*/
