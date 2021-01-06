@@ -71,6 +71,22 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+.fc12 {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(asset/002.JPG);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+  animation-name: fc1anim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes fsdiv1anim {
   from {height: 100vh;
         width: 100vw;
