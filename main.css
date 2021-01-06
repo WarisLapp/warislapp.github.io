@@ -94,7 +94,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(asset/04.JPG);
+  background-image: url(asset/04.jpg);
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
   animation-name: fc1anim;
   animation-duration: 2s;
